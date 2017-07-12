@@ -14,7 +14,8 @@ class FacegramTests: XCTestCase {
     override func setUp() {
         super.setUp()
     }
-    func testBitCI() { 
+    func testBitCI() {
+        XCTAssert(true, "test CI")
     }
     
 }
