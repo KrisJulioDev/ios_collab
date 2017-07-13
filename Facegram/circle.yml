@@ -13,6 +13,4 @@ dependencies:
 
 test:
   override:
-    - rake test:ios
-    - rake test:osx
-    - rake test:xctool_ios
+    - scripts/circle_test.sh 
