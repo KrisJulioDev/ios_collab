@@ -15,7 +15,7 @@ class FacegramTests: XCTestCase {
         super.setUp()
     }
     func testBitCI() {
-        XCTAssert(true, "texting")
+        XCTAssert(false, "texting")
     }
     
 }
