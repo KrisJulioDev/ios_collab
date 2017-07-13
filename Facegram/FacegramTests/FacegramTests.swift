@@ -18,4 +18,7 @@ class FacegramTests: XCTestCase {
         XCTAssert(false, "texting")
     }
     
+    func testHello() {
+        XCTAssert(false, "hello")
+    }
 }
