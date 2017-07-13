@@ -2,6 +2,17 @@ machine:
   xcode:
     version: "8.3.2"
 
+checkout:
+  post:
+    - git submodule update --init --recursive
+
+dependencies:
+  pre:
+    - brew update || brew update
+    - brew outdated xctool || brew upgrade xctool
+
 test:
   override:
-    - ./bin/tests
+    - rake test:ios
+    - rake test:osx
+    - rake test:xctool_ios
