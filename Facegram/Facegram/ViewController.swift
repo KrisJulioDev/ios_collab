@@ -7,12 +7,25 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let titletest = UILabel()
+        titletest.text = "Hello world!"
+        titletest.textColor = .orange
+        
+        self.view.addSubview(titletest)
+        titletest.snp.makeConstraints({
+            make in
+            
+            make.center.equalToSuperview()
+        })
+        
     }
 
     override func didReceiveMemoryWarning() {
